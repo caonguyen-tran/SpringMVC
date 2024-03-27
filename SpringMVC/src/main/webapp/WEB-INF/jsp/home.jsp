@@ -16,7 +16,7 @@
             Hello
         </li>
         <li>World</li>
-        <li>{word}</li>
+        <li>${word}</li>
     </ul>
 </body>
 </html>
