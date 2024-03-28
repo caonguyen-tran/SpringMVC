@@ -1,10 +1,11 @@
 package com.tcn.pojo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "receipt")
-public class Receipt {
+public class Receipt implements Serializable {
     @Column(name = "user_id")
     private Integer userId;
 

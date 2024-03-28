@@ -1,10 +1,14 @@
 package com.tcn.pojo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "category")
-public class Category {
+@NamedQueries({
+    @NamedQuery(name="Category.findAll", query = "SELECT c FROM Category c")
+})
+public class Category implements Serializable {
     @Id
     @Column(name = "id")
     private Integer id;
